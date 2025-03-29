@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.album {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.albumTitle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  font-size: 1.5rem;
+}
